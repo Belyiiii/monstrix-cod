@@ -1,0 +1,149 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="24" font-weight="bold">
+    MONSTRIX Robot - Схема подключения
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="55" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="14">
+    ESP32-C3 + OLED 0.96" + MPU6050 (I2C на пинах 8 и 9)
+  </text>
+  
+  <!-- ESP32-C3 Board -->
+  <g id="esp32c3">
+    <rect x="300" y="200" width="200" height="280" rx="10" fill="#2a4d3a" stroke="#00ff88" stroke-width="2"/>
+    <text x="400" y="225" text-anchor="middle" fill="#00ff88" font-family="Arial, sans-serif" font-size="18" font-weight="bold">ESP32-C3</text>
+    
+    <!-- Left pins -->
+    <circle cx="290" cy="250" r="4" fill="#ff6b35"/>
+    <text x="270" y="255" text-anchor="end" fill="#fff" font-family="Arial, sans-serif" font-size="12">3V3</text>
+    
+    <circle cx="290" cy="280" r="4" fill="#333"/>
+    <text x="270" y="285" text-anchor="end" fill="#fff" font-family="Arial, sans-serif" font-size="12">GND</text>
+    
+    <circle cx="290" cy="350" r="4" fill="#4a9eff"/>
+    <text x="270" y="355" text-anchor="end" fill="#fff" font-family="Arial, sans-serif" font-size="12">GPIO8</text>
+    <text x="265" y="370" text-anchor="end" fill="#888" font-family="Arial, sans-serif" font-size="10">(SDA)</text>
+    
+    <circle cx="290" cy="390" r="4" fill="#ffeb3b"/>
+    <text x="270" y="395" text-anchor="end" fill="#fff" font-family="Arial, sans-serif" font-size="12">GPIO9</text>
+    <text x="265" y="410" text-anchor="end" fill="#888" font-family="Arial, sans-serif" font-size="10">(SCL)</text>
+    
+    <!-- Right pins -->
+    <circle cx="510" cy="250" r="4" fill="#ff6b35"/>
+    <text x="530" y="255" text-anchor="start" fill="#fff" font-family="Arial, sans-serif" font-size="12">3V3</text>
+    
+    <circle cx="510" cy="280" r="4" fill="#333"/>
+    <text x="530" y="285" text-anchor="start" fill="#fff" font-family="Arial, sans-serif" font-size="12">GND</text>
+  </g>
+  
+  <!-- OLED Display -->
+  <g id="oled">
+    <rect x="50" y="120" width="120" height="80" rx="5" fill="#1a1a2e" stroke="#4a9eff" stroke-width="2"/>
+    <rect x="60" y="135" width="100" height="50" rx="3" fill="#000"/>
+    <text x="110" y="100" text-anchor="middle" fill="#4a9eff" font-family="Arial, sans-serif" font-size="16" font-weight="bold">OLED 0.96"</text>
+    <text x="110" y="115" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="12">128x64 I2C</text>
+    
+    <!-- OLED pins -->
+    <circle cx="60" cy="210" r="3" fill="#333"/>
+    <text x="35" y="215" text-anchor="end" fill="#fff" font-family="Arial, sans-serif" font-size="11">GND</text>
+    
+    <circle cx="80" cy="210" r="3" fill="#ff6b35"/>
+    <text x="80" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">VCC</text>
+    
+    <circle cx="100" cy="210" r="3" fill="#4a9eff"/>
+    <text x="100" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">SDA</text>
+    
+    <circle cx="120" cy="210" r="3" fill="#ffeb3b"/>
+    <text x="120" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">SCL</text>
+    
+    <!-- Eyes animation -->
+    <circle cx="85" cy="155" r="12" fill="#00ff88"/>
+    <circle cx="135" cy="155" r="12" fill="#00ff88"/>
+    <circle cx="88" cy="152" r="6" fill="#000"/>
+    <circle cx="138" cy="152" r="6" fill="#000"/>
+  </g>
+  
+  <!-- MPU6050 Accelerometer -->
+  <g id="mpu6050">
+    <rect x="600" y="120" width="120" height="80" rx="5" fill="#4a1a4a" stroke="#ff6b35" stroke-width="2"/>
+    <rect x="615" y="140" width="90" height="40" rx="3" fill="#333"/>
+    <text x="660" y="100" text-anchor="middle" fill="#ff6b35" font-family="Arial, sans-serif" font-size="16" font-weight="bold">MPU6050</text>
+    <text x="660" y="115" text-anchor="middle" fill="#888" font-family="Arial, sans-serif" font-size="12">Гироскоп</text>
+    
+    <!-- MPU6050 pins -->
+    <circle cx="620" cy="210" r="3" fill="#ff6b35"/>
+    <text x="620" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">VCC</text>
+    
+    <circle cx="640" cy="210" r="3" fill="#333"/>
+    <text x="640" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">GND</text>
+    
+    <circle cx="660" cy="210" r="3" fill="#4a9eff"/>
+    <text x="660" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">SDA</text>
+    
+    <circle cx="680" cy="210" r="3" fill="#ffeb3b"/>
+    <text x="680" y="230" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="11">SCL</text>
+    
+    <!-- Movement indicator -->
+    <path d="M640 150 L650 160 L630 160 Z" fill="#ff6b35"/>
+    <path d="M680 150 L670 160 L690 160 Z" fill="#ff6b35"/>
+  </g>
+  
+  <!-- Connection Lines -->
+  <!-- Power connections (3V3) -->
+  <line x1="290" y1="250" x2="80" y2="210" stroke="#ff6b35" stroke-width="3"/>
+  <line x1="510" y1="250" x2="620" y2="210" stroke="#ff6b35" stroke-width="3"/>
+  
+  <!-- Ground connections -->
+  <line x1="290" y1="280" x2="60" y2="210" stroke="#333" stroke-width="3"/>
+  <line x1="510" y1="280" x2="640" y2="210" stroke="#333" stroke-width="3"/>
+  
+  <!-- I2C SDA connections -->
+  <line x1="290" y1="350" x2="100" y2="210" stroke="#4a9eff" stroke-width="3"/>
+  <line x1="290" y1="350" x2="200" y2="350" stroke="#4a9eff" stroke-width="2"/>
+  <line x1="200" y1="350" x2="200" y2="240" stroke="#4a9eff" stroke-width="2"/>
+  <line x1="200" y1="240" x2="660" y2="240" stroke="#4a9eff" stroke-width="2"/>
+  <line x1="660" y1="240" x2="660" y2="210" stroke="#4a9eff" stroke-width="2"/>
+  
+  <!-- I2C SCL connections -->
+  <line x1="290" y1="390" x2="120" y2="210" stroke="#ffeb3b" stroke-width="3"/>
+  <line x1="290" y1="390" x2="220" y2="390" stroke="#ffeb3b" stroke-width="2"/>
+  <line x1="220" y1="390" x2="220" y2="260" stroke="#ffeb3b" stroke-width="2"/>
+  <line x1="220" y1="260" x2="680" y2="260" stroke="#ffeb3b" stroke-width="2"/>
+  <line x1="680" y1="260" x2="680" y2="210" stroke="#ffeb3b" stroke-width="2"/>
+  
+  <!-- I2C Bus Label -->
+  <rect x="350" y="500" width="100" height="60" rx="5" fill="#2a2a4a" stroke="#888" stroke-width="1"/>
+  <text x="400" y="520" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">I2C Bus</text>
+  <text x="400" y="535" text-anchor="middle" fill="#4a9eff" font-family="Arial, sans-serif" font-size="12">SDA: GPIO8</text>
+  <text x="400" y="550" text-anchor="middle" fill="#ffeb3b" font-family="Arial, sans-serif" font-size="12">SCL: GPIO9</text>
+  
+  <!-- Color Legend -->
+  <text x="50" y="320" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Цвета проводов:</text>
+  
+  <circle cx="60" cy="340" r="5" fill="#ff6b35"/>
+  <text x="75" y="345" fill="#fff" font-family="Arial, sans-serif" font-size="12">3.3V (Питание)</text>
+  
+  <circle cx="60" cy="360" r="5" fill="#333"/>
+  <text x="75" y="365" fill="#fff" font-family="Arial, sans-serif" font-size="12">GND (Земля)</text>
+  
+  <circle cx="60" cy="380" r="5" fill="#4a9eff"/>
+  <text x="75" y="385" fill="#fff" font-family="Arial, sans-serif" font-size="12">SDA (Данные I2C)</text>
+  
+  <circle cx="60" cy="400" r="5" fill="#ffeb3b"/>
+  <text x="75" y="405" fill="#fff" font-family="Arial, sans-serif" font-size="12">SCL (Тактовый I2C)</text>
+  
+  <!-- Notes -->
+  <text x="600" y="320" fill="#888" font-family="Arial, sans-serif" font-size="12">📝 Примечания:</text>
+  <text x="600" y="340" fill="#888" font-family="Arial, sans-serif" font-size="11">• Все устройства на одной шине I2C</text>
+  <text x="600" y="355" fill="#888" font-family="Arial, sans-serif" font-size="11">• OLED адрес: 0x3C</text>
+  <text x="600" y="370" fill="#888" font-family="Arial, sans-serif" font-size="11">• MPU6050 адрес: 0x68</text>
+  <text x="600" y="385" fill="#888" font-family="Arial, sans-serif" font-size="11">• Питание: 3.3V для всех модулей</text>
+  
+  <!-- MONSTRIX Logo -->
+  <text x="50" y="580" fill="#00ff88" font-family="Arial, sans-serif" font-size="14" font-weight="bold">MONSTRIX.RU</text>
+  <text x="150" y="580" fill="#888" font-family="Arial, sans-serif" font-size="12">github.com/Belyiiii</text>
+</svg>

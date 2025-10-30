@@ -1,0 +1,37 @@
+# Arduino IDE
+*.ino.bak
+*.ino.orig
+
+# Compiled files
+*.hex
+*.bin
+*.elf
+
+# Build directories
+build/
+*.build/
+
+# Libraries (if using local copies)
+libraries/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.swo
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Documentation build
+docs/_build/
