@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: ESP32](https://img.shields.io/badge/Platform-ESP32-blue.svg)](https://www.espressif.com/en/products/socs/esp32)
-[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://monstrix.ru)
+[![Made with Love](https://img.shields.io/badge/Made%20with-❤️-red.svg)]()
 
 > *Inspired by "Love, Death & Robots" series*
 
