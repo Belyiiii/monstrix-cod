@@ -183,15 +183,6 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Igor Fedorov** - Electronics enthusiast and content creator
-
-- 🌐 Website: [monstrix.ru](https://monstrix.ru)
-- 📸 Instagram: [@igor.fedorov](https://www.instagram.com/igor.fedorov)
-- 🎥 YouTube: [@project_23](https://youtube.com/@project_23)
-- 📱 TikTok: [@igortechminimal](https://www.tiktok.com/@igortechminimal)
-- 💬 Telegram: [@techminimal](https://t.me/techminimal)
 
 ## 🙏 Acknowledgments
 
