@@ -81,7 +81,7 @@ Install these libraries through Arduino IDE Library Manager:
 ### Installation Links:
 - [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Adafruit SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
-- [FluxGarage RoboEyes](https://github.com/FluxGarage/FluxGarage_RoboEyes)
+- [FluxGarage RoboEyes](https://github.com/FluxGarage/RoboEyes)
 - [MPU6050_light](https://github.com/rfetick/MPU6050_light)
 
 ## 🚀 Quick Start
