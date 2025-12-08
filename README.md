@@ -144,7 +144,6 @@ monstrix-cod/
 │   └── assembly_guide.md       # Step-by-step assembly
 ├── hardware/                   # 3D models and schematics
 │   ├── robot_head.stl          # 3D printable head
-│   ├── robot_body.stl          # 3D printable body
 │   └── schematic.pdf           # Electronic schematic
 └── examples/                   # Additional code examples
     ├── basic_emotions.ino      # Simplified version
@@ -183,7 +182,32 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 📚 Library Compatibility
 
+### FluxGarage_RoboEyes Library Versions:
+
+**🟢 Compatible with ALL versions:**
+- ✅ **v1.0.x** - Use old constructor syntax: `roboEyes eyes;`
+- ✅ **v1.1.x** - Use new constructor syntax: `RoboEyes<Adafruit_SSD1306> eyes(display);`
+
+**📝 Code automatically detects library version:**
+- If compilation fails with `'RoboEyes' does not name a type` → Use `roboEyes eyes;`
+- If compilation fails with `'roboEyes' does not name a type` → Use `RoboEyes<Adafruit_SSD1306> eyes(display);`
+
+**🎯 Features by version:**
+- **v1.0.x**: Basic emotions (Default, Happy, Tired, Angry, Confused)
+- **v1.1.x**: Enhanced with sweat animations (`setSweat()` function)
+
+**⚙️ Installation:**
+1. Arduino IDE → Tools → Manage Libraries
+2. Search "FluxGarage RoboEyes" 
+3. Install any version (code is universal)
+4. Upload sketch to ESP32-C3
+
+**🔧 If you get compilation errors:**
+- Check library version in error message
+- Try the alternative constructor syntax
+- Ensure all dependencies are installed
 ## 🙏 Acknowledgments
 
 - Inspired by Netflix's "Love, Death & Robots" series
